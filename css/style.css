@@ -1,0 +1,54 @@
+:root{
+ --first-color: #0084FD;
+ --second-color: #B5DDFF;
+ --third-color: #9792E4;
+ --fourth-color: #F2BB6B;
+ --fifth-color: #333333;
+}
+
+/*
+
+header
+
+*/
+
+.column-header:last-of-type{
+    display: none;
+}
+
+/*
+
+main
+
+*/
+
+/*
+
+footer
+
+*/
+
+/*
+
+debug
+
+*/
+.container{
+    max-width: 480px;  
+}
+
+header{
+    width: 480px;
+    background-color: var(--first-color);
+    margin: auto;
+}
+
+.flex-header{
+    width: 480px;
+}
+
+.column-header{
+    border: 1px dashed black;
+    width: 50%;
+}
+
