@@ -23,6 +23,11 @@ main
 
 */
 
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+
 /*
 
 footer
@@ -42,6 +47,7 @@ header{
 
 main{
     background-color: white;
+    margin: auto;
 }
 
 .flex-header{
@@ -55,7 +61,7 @@ main{
 
 .flex-1{
     flex-wrap: wrap;
-    width: 480px;
+    justify-content: space-between;
 }
 
 /* ricorda di correggere il margin-bottom per tablet e desktop se necessario */
@@ -63,11 +69,22 @@ main{
 .column-1{
     background-color: var(--second-color);
     border-radius: 1.5rem;
-    min-height: 100px;
     width: 100%;
     margin-bottom: 1rem;
 }
 
+.column-1>img{
+    width: 80%;
+    margin: auto;
+}
+
+.flex-2{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.column-2{
+    width: 100%;
+}
 
 
 
@@ -86,7 +103,9 @@ TABLET
 */
 
 @media screen and (min-width: 768px) {
-    
+    .column-1{ width: 30%;}
+    .column-1:first-of-type{ width: 65%;}
+    .column-2>img{width: 50%;}
 }
 
 /*
@@ -98,5 +117,7 @@ DESKTOP
 @media screen and (min-width: 992px) {
     .column-header:nth-of-type(2){display: none;}
     .column-header:last-of-type{display: block;}
+    .column-2{width: 50%;}
+    .column-2>img{width: 100%;}
 }
 
