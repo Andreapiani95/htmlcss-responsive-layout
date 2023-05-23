@@ -14,5 +14,21 @@ GENERAL
 }
 
 img{
+    display: block;
     max-width: 100%;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 15% / 50%;
 }

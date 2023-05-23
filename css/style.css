@@ -6,6 +6,7 @@
  --fifth-color: #333333;
 }
 
+
 /*
 
 header
@@ -33,22 +34,69 @@ footer
 debug
 
 */
-.container{
-    max-width: 480px;  
-}
 
 header{
-    width: 480px;
     background-color: var(--first-color);
     margin: auto;
 }
 
+main{
+    background-color: white;
+}
+
 .flex-header{
-    width: 480px;
+    margin-bottom: 1rem;
 }
 
 .column-header{
     border: 1px dashed black;
     width: 50%;
+}
+
+.flex-1{
+    flex-wrap: wrap;
+    width: 480px;
+}
+
+/* ricorda di correggere il margin-bottom per tablet e desktop se necessario */
+
+.column-1{
+    background-color: var(--second-color);
+    border-radius: 1.5rem;
+    min-height: 100px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+/*
+
+MEDIA QUERY
+
+*/
+
+/*
+
+TABLET
+
+*/
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/*
+
+DESKTOP
+
+*/
+
+@media screen and (min-width: 992px) {
+    .column-header:nth-of-type(2){display: none;}
+    .column-header:last-of-type{display: block;}
 }
 

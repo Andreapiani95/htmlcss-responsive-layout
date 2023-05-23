@@ -1,78 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!--Fontawesome-->
-        <script src="https://kit.fontawesome.com/b2acb5c068.js" crossorigin="anonymous"></script>
 
-        <!--CSS-->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        
-        <title>Responsive Layout</title>
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/b2acb5c068.js" crossorigin="anonymous"></script>
 
-    </head>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <body>
-        <!--Un header con elementi in flex-->
-        <header>
-            <!--2 colonne, una con il logo l'altra ha un menù apribile da mobile e da tablet, ma nella versione desktop ha invece uan serie di link di cui un bottone-->
-            
-            <div class="flex flex-header">
 
-                <div class="column-header">
-                    <img src="img/logo.png" alt="">
-                </div>
+    <title>Responsive Layout</title>
 
-                <div class="column-header">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+</head>
 
-                <div class="column-header">
+<body>
+    <!--Un header con elementi in flex-->
+    <header>
+        <!--2 colonne, una con il logo l'altra ha un menù apribile da mobile e da tablet, ma nella versione desktop ha invece uan serie di link di cui un bottone-->
 
-                </div>
+        <div class="flex flex-header">
+
+            <div class="column-header">
+                <img src="img/logo.png" alt="">
             </div>
 
-        </header>
-
-        <!--Main diviso in 6 sezioni-->
-        <main>
-
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-                
-            </div>
-            
-            
-        </main>
-
-        <footer>
-
-            <div>
-                footer
+            <div class="column-header">
+                <i class="fa-solid fa-bars"></i>
             </div>
 
-        </footer>
-    
-    </body>
+            <div class="column-header">
+                <ul>
+                    <li><a href="">Planning</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""><button>Get Started</button></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Main diviso in 6 sezioni-->
+    <main>
+
+        <!--Prima sezione del main: un flex con 5 colonne di larghezza uguale su mobile e nelle versione di tablet e desktop vengono ridimensionate su 2 file-->
+        <div class="flex flex-1">
+
+
+            <div class="column-1">
+                <h3>
+                    Get a demo application
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                </p>
+                <a href=""><button>app store</button></a>
+                <img src="img/phone.png" alt="">
+            </div>
+
+            <div class="column-1">
+                <div><i class="fa-solid fa-file-code"></i></div>
+                <h3>Clean Code</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                </p>
+            </div>
+            <div class="column-1">
+                <div><i class="fa-solid fa-file-code"></i></div>
+                <h3>Clean Code</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                </p>
+            </div>
+            <div class="column-1">
+                <div><i class="fa-solid fa-file-code"></i></div>
+                <h3>Clean Code</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                </p>
+            </div>
+            <div class="column-1">
+                <div><i class="fa-solid fa-file-code"></i></div>
+                <h3>Clean Code</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                </p>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div>
+            footer
+        </div>
+
+    </footer>
+
+</body>
 
 </html>
