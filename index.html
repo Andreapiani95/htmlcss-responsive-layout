@@ -20,21 +20,22 @@
 </head>
 
 <body>
+    
     <!--Un header con elementi in flex-->
     <header>
         <!--2 colonne, una con il logo l'altra ha un menù apribile da mobile e da tablet, ma nella versione desktop ha invece uan serie di link di cui un bottone-->
 
-        <div class="flex flex-header">
+        <div class="container flex flex-header">
 
             <div class="column-header">
-                <img src="img/logo.png" alt="">
+                <img  id="logo" src="img/logo.png" alt="">
             </div>
 
-            <div class="column-header">
+            <div class="column-header header-right">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="column-header">
+            <div class="column-header header-right">
                 <ul>
                     <li><a href="">Planning</a></li>
                     <li><a href="">Testimonials</a></li>
@@ -49,95 +50,176 @@
 
     <!--Main diviso in 6 sezioni-->
     <main>
+        <div class="container">
+            <!--Prima sezione del main: un flex con 5 colonne di larghezza uguale su mobile e nelle versione di tablet e desktop vengono ridimensionate su 2 file-->
+            <div class="flex flex-1">
 
-        <!--Prima sezione del main: un flex con 5 colonne di larghezza uguale su mobile e nelle versione di tablet e desktop vengono ridimensionate su 2 file-->
-        <div class="container flex flex-1">
+
+                <div class="column-1 flex flex-2">
+
+                    <div class="column-2">
+                        <h3>
+                            Get a demo application
+                        </h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio
+                            laudantium
+                            labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in,
+                            perferendis
+                            cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                        </p>
+                        <a href=""><button>app store</button></a>
+
+                    </div>
+
+                    <div class="column-2">
+                        <img src="img/phone.png" alt="">
+                    </div>
 
 
-            <div class="column-1 flex flex-2">
-                
-                <div class="column-2">
-                    <h3>
-                        Get a demo application
-                    </h3>
+
+                </div>
+
+                <div class="column-1 card-1">
+                    <div><i class="fa-solid fa-file-code"></i></div>
+                    <h3>Clean Code</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
                         labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
                         cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
                     </p>
-                    <a href=""><button>app store</button></a>
+                </div>
+                <div class="column-1 card-1">
+                    <div><i class="fa-solid fa-file-code"></i></div>
+                    <h3>Clean Code</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                        labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                        cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                    </p>
+                </div>
+                <div class="column-1 card-1">
+                    <div><i class="fa-solid fa-file-code"></i></div>
+                    <h3>Clean Code</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                        labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                        cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                    </p>
+                </div>
+                <div class="column-1 card-1">
+                    <div><i class="fa-solid fa-file-code"></i></div>
+                    <h3>Clean Code</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
+                        labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
+                        cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
+                    </p>
+                </div>
+
+            </div>
+
+            <!--seconda sezione del main: Un flex con 2 colonne una sopra l'altra (mobile e tablet) e una accanto all'altra (desktop)-->
+            <div class="flex flex-3">
+
+                <div class="column-3 flex flex-4">
+
+                    <div class="column-4">
+                        <img src="img/planning1.png" alt="">
+                    </div>
+
+                    <div class="column-4">
+                        <h2>Strategic Planning</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae esse incidunt aut et quo rerum
+                            perspiciatis doloribus? Repellat ab illum soluta corporis facere saepe obcaecati consectetur
+                            reprehenderit ullam non, nihil dolore necessitatibus quia? Necessitatibus ipsa cupiditate
+                            doloribus porro illo repellendus.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column-3">
+                    <div class="card-2">
+                        <img src="img/planning2.png" alt="">
+                        <h2>App Development</h2>
+                        <p>
+                            Develop an on-demand app for your delivery business to reach your targeted customers without any
+                            interruptions.
+                        </p>
+                        <a href=""><button>a</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Terza sezione del main: Flex come nella sezione 1, ma non cambia layout su tablet/desktop-->
+            <div class="flex flex-5">
+                <div class="column-5">
+                    <h2>Testimonials</h2>
+                    <h3>We are committed partners</h3>
+                    <p>We place a huge value</p>
+                </div>
+
+                <div class="column-5 flex card-3">
+                    <!--immagine quadrata DIMENSIONI FISSE PER FARLO-->
+                    <div class="card-3-column testimonial">
+                        <img src="img/testimonial1.jpg" alt="">
+                    </div>
+                    
+                    <p class="card-3-column">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nulla explicabo fugit suscipit quam
+                        totam enim ex error praesentium et.
+                    </p>
 
                 </div>
 
-                <div class="column-2">
-                    <img src="img/phone.png" alt="">
+                <div class="column-5 flex card-3">
+                    <!--immagine quadrata DIMENSIONI FISSE PER FARLO-->
+                    <img class="card-3-column" src="img/testimonial2.jpg" alt="">
+                    <p class="card-3-column">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nulla explicabo fugit suscipit quam
+                        totam enim ex error praesentium et.
+                    </p>
+
                 </div>
-                
-                
-                
+
+                <div class="column-5 flex card-3">
+                    <!--immagine quadrata DIMENSIONI FISSE PER FARLO-->
+                    <img class="card-3-column" src="img/testimonial3.jpg" alt="">
+                    <p class="card-3-column">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non nulla explicabo fugit suscipit quam
+                        totam enim ex error praesentium et.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="column-1">
-                <div><i class="fa-solid fa-file-code"></i></div>
-                <h3>Clean Code</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
-                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
-                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
-                </p>
+            <!--Quarta sezione del main: Flex di 6 carte uguali disposte in wrap, media query per determinare larghezza colonne-->
+            <div class=>
+                <h2>Benefits of working with us</h2>
+                <div class="flex">
+
+                </div>
             </div>
-            <div class="column-1">
-                <div><i class="fa-solid fa-file-code"></i></div>
-                <h3>Clean Code</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
-                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
-                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
-                </p>
+
+            <!--Quinta sezione: di nuovo flex-wrap e si modifica la larghezza delle colonne-->
+            <div>
+
             </div>
-            <div class="column-1">
-                <div><i class="fa-solid fa-file-code"></i></div>
-                <h3>Clean Code</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
-                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
-                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
-                </p>
-            </div>
-            <div class="column-1">
-                <div><i class="fa-solid fa-file-code"></i></div>
-                <h3>Clean Code</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima alias distinctio laudantium
-                    labore doloribus cupiditate, ut soluta eum eaque officiis quisquam ipsum. Aut modi in, perferendis
-                    cum ut dolor dolore nostrum itaque cumque ipsam, dignissimos iure amet officiis ducimus.
-                </p>
+
+            <!--Sesta sezione non varia in media query, ma aumenta padding o si riduce larghezza del div-->
+            <div>
+
             </div>
 
         </div>
-
-        <!--seconda sezione del main: Un flex con 2 colonne una sopra l'altra (mobile e tablet) e una accanto all'altra (desktop)-->
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-
-
     </main>
 
     <footer>
 
+        <!--Una sola sezione con un 2 p centrati che non varia in media query-->
         <div>
             footer
         </div>

@@ -7,26 +7,46 @@
 }
 
 
+
 /*
 
 header
 
 */
+header{
+    background-color: var(--first-color);
+    margin: auto;
+}
 
 .column-header:last-of-type{
     display: none;
 }
 
+.flex-header{
+    margin-bottom: 1rem;
+    
+}
+
+.column-header{
+    color: white;
+    width: 50%;
+    padding: 1rem;
+}
+
+#logo{
+    scale: 0.8;
+}
+
+.header-right{
+    text-align: right;
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+}
 /*
 
 main
 
 */
-
-.container{
-    max-width: 90%;
-    margin: auto;
-}
 
 /*
 
@@ -40,23 +60,19 @@ debug
 
 */
 
-header{
-    background-color: var(--first-color);
-    margin: auto;
-}
+
 
 main{
     background-color: white;
     margin: auto;
 }
 
-.flex-header{
-    margin-bottom: 1rem;
+main .container>div:nth-of-type( even ){
+    background-color: var(--third-color);
 }
 
-.column-header{
-    border: 1px dashed black;
-    width: 50%;
+.flex-header{
+    margin-bottom: 1rem;
 }
 
 .flex-1{
@@ -82,13 +98,63 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .column-2{
     width: 100%;
 }
 
+.flex-3{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column-3{
+    width: 100%;
+}
+
+.flex-4{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.column-4{
+    width: 100%;
+    border: 1px dashed black;
+}
+
+.card-2{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.flex-5{
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.column-5{
+    width: 100%;
+}
 
 
+.card-3{
+    background-color: var(--third-color);
+    margin: 1rem;
+    border-radius: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.card-3>img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto;
+}
 
 /*
 
@@ -103,9 +169,16 @@ TABLET
 */
 
 @media screen and (min-width: 768px) {
+    /*main*/
+        /*section 1*/
     .column-1{ width: 30%;}
     .column-1:first-of-type{ width: 65%;}
     .column-2>img{width: 50%;}
+        /*section 3*/
+    .card-3-column{width: 60%;}
+    .card-3-column.testimonial{width: 30%;}
+      
+    
 }
 
 /*
@@ -115,9 +188,14 @@ DESKTOP
 */
 
 @media screen and (min-width: 992px) {
+    /*header*/
     .column-header:nth-of-type(2){display: none;}
     .column-header:last-of-type{display: block;}
+    /*main*/
+        /*section 1*/
     .column-2{width: 50%;}
     .column-2>img{width: 100%;}
+        /*section 2*/
+    .column-3{width: 50%;}
 }
 
